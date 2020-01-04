@@ -1,0 +1,70 @@
+.menu {
+  color: midnightblue;
+  font-size: 16px;
+  text-align: center;
+}
+.menu li {
+  width: 175px;
+  height: 40px;
+  /*display: inline; - в стоку разной ширины*/
+  /*display: inline-block;-длинные переносит и поднимает вверх*/
+  display: inline-flex; 
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+  padding: 5px 5px 5px 5px;
+}
+.menu li a {
+  text-decoration: none;
+  font-size: larger;
+  text-align: center;
+}
+.menu a:hover {
+  text-shadow: 2px 2px 1px gray;
+  text-decoration: underline;
+}
+.transparent50 {
+  filter: alpha(Opacity=70);
+  opacity: 0.5;
+}
+.usl {
+  width: 250px;
+  height: 250px;
+  font-size: larger;
+  border: 1px solid black;
+  border-radius: 10%;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  float: left;
+}
+.dropdown {
+  border: 1px solid black;
+}
+html {
+  background-color: rgb(231, 255, 182);
+  text-align: center;
+  background: url(1jpg);
+}
+body {
+  width: 1200px;
+  text-align: center;
+  border: 2px solid midnightblue;
+  margin: 50px auto; /*otstup*/
+  padding: 0 20px 700px 20px;
+  background-color: rgb(221, 253, 158);
+}
+h1 {
+  font-size: 60px;
+  border: 2px solid midnightblue;
+  background-color: lightgreen;
+  margin: 20px 20px 20px;
+}
+h2 {
+  font-size: 30px;
+  border-top: 2px solid midnightblue;
+  margin: 20px 20px 20px;
+}
+p1 {
+  font-size: 14px;
+}
