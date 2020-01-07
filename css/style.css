@@ -1,31 +1,78 @@
-.menu {
-  color: midnightblue;
-  font-size: 16px;
+html {
+  background-color: rgb(231, 255, 182);
   text-align: center;
+  background: url(1jpg);
 }
-.menu li {
-  width: 175px;
-  height: 40px;
-  /*display: inline; - в стоку разной ширины*/
-  /*display: inline-block;-длинные переносит и поднимает вверх*/
-  display: inline-flex; 
-  border: 1px solid black;
+body {
+  width: 80%;
   text-align: center;
-  background-color: white;
-  padding: 5px 5px 5px 5px;
+  border: 2px solid midnightblue;
+  margin: 50px auto; /*otstup*/
+  padding: 0 20px 700px 20px;
+  background-color: rgb(221, 253, 158);
 }
-.menu li a {
+h2 {
+  font-size: 30px;
+  border-top: 2px solid midnightblue;
+  margin: 20px 20px 20px;
+}
+.head{
+  display: flex;
+  margin: 0px;
+  justify-content: space-between;
+}
+.mainall {
+  display: flex;
+  flex-direction: column;     
+  margin: 0px;
+}
+.mainall a{
   text-decoration: none;
-  font-size: larger;
-  text-align: center;
+  text-shadow:1px 1px 2px rgb(42, 71, 42);
+  color: black;
+  font-weight: bolder;
 }
-.menu a:hover {
-  text-shadow: 2px 2px 1px gray;
+.main{
+  list-style-type: none;  
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  align-items: center;
+}
+
+.main div{
+  width: 20%;
+  text-align: center;
+  padding: 10px 5px;
+  background:  linear-gradient(to top, #b5bdc8 0%,#829586 36%, #283b2a 100%); /*linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);*/
+}
+.main div:hover {
   text-decoration: underline;
+  box-shadow: 3px 3px 10px grey;
+  text-decoration: none;
+}
+.main .sub-main {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute; 
+  background-color: darkseagreen;
+  min-width: 150px;
+  display: none;
+
+} 
+.main div:hover > .sub-main {
+    display: block; 
+    margin: 0px;  
 }
 .transparent50 {
   filter: alpha(Opacity=70);
   opacity: 0.5;
+}
+.usl-all{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
 }
 .usl {
   width: 250px;
@@ -36,35 +83,11 @@
   background-color: white;
   padding: 10px;
   margin: 10px;
-  float: left;
+}
+.usl:hover {
+  box-shadow: 0px 10px 50px grey;
+
 }
 .dropdown {
   border: 1px solid black;
-}
-html {
-  background-color: rgb(231, 255, 182);
-  text-align: center;
-  background: url(1jpg);
-}
-body {
-  width: 1200px;
-  text-align: center;
-  border: 2px solid midnightblue;
-  margin: 50px auto; /*otstup*/
-  padding: 0 20px 700px 20px;
-  background-color: rgb(221, 253, 158);
-}
-h1 {
-  font-size: 60px;
-  border: 2px solid midnightblue;
-  background-color: lightgreen;
-  margin: 20px 20px 20px;
-}
-h2 {
-  font-size: 30px;
-  border-top: 2px solid midnightblue;
-  margin: 20px 20px 20px;
-}
-p1 {
-  font-size: 14px;
 }
