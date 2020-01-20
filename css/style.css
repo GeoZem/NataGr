@@ -1,35 +1,54 @@
 html {
-  background-color: rgb(231, 255, 182);
   text-align: center;
-  background: url(1jpg);
+  background: url(1.jpg);
+  font-family: 'Open Sans', sans-serif;
+
 }
 body {
   width: 80%;
   text-align: center;
   border: 2px solid midnightblue;
-  margin: 50px auto; /*otstup*/
-  padding: 0 20px 700px 20px;
-  background-color: rgb(221, 253, 158);
+  margin: 0px auto; /*otstup*/
+  padding: 0 20px 700px 0px;
+
 }
 h2 {
   font-size: 30px;
   border-top: 2px solid midnightblue;
-  margin: 20px 20px 20px;
+  margin: 0px 0px 0px;
 }
 .head{
   display: flex;
   margin: 0px;
   justify-content: space-between;
+  background: url(1.jpg);
+  /*background-color:green;*/
+
+}
+.head1{ 
+  background-color: rgb(232, 250, 227);
+  border-radius: 10px;
+  box-shadow: 2px, 2px, 2px #283b2a;
+  border: grey 1 px;
+  width: 85%;
+}
+.head2{
+  border-radius: 10px;
+  box-shadow: 2px, 2px, 2px #283b2a;
+  background:  linear-gradient(to top, #b5bdc8 0%,#829586 36%, #283b2a 100%);
+  color: white;
+  width: 25%;
+
 }
 .mainall {
   display: flex;
   flex-direction: column;     
-  margin: 0px;
+  margin-top: 50px; 
 }
 .mainall a{
   text-decoration: none;
-  text-shadow:1px 1px 2px rgb(42, 71, 42);
-  color: black;
+  text-shadow:1px 1px 2px rgb(4, 8, 4);
+  color: white;
   font-weight: bolder;
 }
 .main{
@@ -37,14 +56,15 @@ h2 {
   display: flex;
   justify-content: space-around;
   text-align: left;
-  align-items: center;
+  align-items: center; 
 }
 
 .main div{
   width: 20%;
   text-align: center;
   padding: 10px 5px;
-  background:  linear-gradient(to top, #b5bdc8 0%,#829586 36%, #283b2a 100%); /*linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);*/
+  border-radius: 20px;
+  background:  linear-gradient(to top, #b5bdc8 0%,#829586 36%, #283b2a 100%);
 }
 .main div:hover {
   text-decoration: underline;
@@ -91,3 +111,10 @@ h2 {
 .dropdown {
   border: 1px solid black;
 }
+
+@font-face {
+  font-family: "lobsterRegular";  
+  src: url("../fonts/RalewayRegular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal;
+   }
