@@ -3,124 +3,162 @@ html {
   background: url(1jpg);
   font-family: "indira", sans-serif;
   box-sizing: border-box;
+  background: url(../img/fon.png);
 }
 body {
   width: 80%;
   text-align: center;
-  border: 2px solid midnightblue;
   margin: 0px auto; /*otstup*/
-  padding: 10px 20px 700px 0px;
+  background-color: white;
+}
+h1 {
+  font-size: 40px;
 }
 h2 {
   font-size: 30px;
-  border-top: 2px solid midnightblue;
-  margin: 0px 0px 0px;
+  margin: 10px 0px 10px;
+}
+h3 {
+  margin: 10px 0px;
 }
 .head {
   display: flex;
-  margin: 0px;
   justify-content: space-between;
-  height: 170px;
+  min-height: 170px;
+  background-color: black;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 4px black;
+  width: 100%;
+  margin-top: 10px;
 }
 .head1 {
   display: flex;
-  background-color: rgb(210, 250, 213);
+  flex-direction: column;
+  background-color: #d9f0d9;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 15px;
   box-shadow: 0px 0px 15px 4px black;
-  width: 80%;
-  position: relative;
+  max-width: 80%;
   justify-content: center;
   align-items: center;
+  text-shadow: 1px 0px 3px black;
 }
 .head1 h1 {
   padding-left: 10px;
 }
-.head1 ::after {
-  content: "";
-  background-color: rgb(210, 250, 213);
-  width: 25px;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
-  margin-right: -10px;
-}
 .head2 {
-  border-radius: 0px 10px 10px 0px;
-  box-shadow: inset 0px 0px 15px 4px black;
-  background: #283b2a;
-  color: white;
-  width: 20%;
-}
-.mainall {
   display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-}
-.mainall a {
-  text-decoration: none;
-  text-shadow: 1px 1px 2px rgb(4, 8, 4);
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 0px 15px 15px 0px;
   color: white;
-  font-weight: bolder;
+  max-width: 20%;
+  box-shadow: inset 0px 0px 10px 4px black;
+  background-color: #283b2a;
 }
-.main {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  text-align: left;
-  align-items: center;
+nav {
+  margin-top: 15px;
+  border-radius: 15px;
+  background-color: #283b2a;
+  box-shadow: 0px 0px 15px 4px black;
 }
 
-.main div {
-  width: 20%;
+.main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 10px 4px black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.main > div > a {
   text-align: center;
   padding: 10px 5px;
-  border-radius: 20px;
-  background: linear-gradient(to top, #b5bdc8 0%, #829586 36%, #283b2a 100%);
-}
-.main div:hover {
-  text-decoration: underline;
-  box-shadow: 3px 3px 10px grey;
-  text-decoration: none;
-}
-.main .sub-main {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  position: absolute;
-  background-color: darkseagreen;
-  min-width: 150px;
-  display: none;
-}
-.main div:hover > .sub-main {
   display: block;
+  text-decoration: none;
+  text-shadow: 1px 0px 2px black;
+  color: white;
+}
+
+.main > div > a:hover {
+  text-decoration: underline;
+  /*box-shadow: 0px 0px 15px 4px black;
+  border-radius: 0px;*/
+}
+
+.submain {
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  position: absolute;
+  margin: 10px -40px;
+  border-radius: 15px;
+  opacity: 0; /* По умолчанию скрываем подменю */
+  visibility: hidden;
+  transition-property: opacity, visibility; /* Важно чтобы transition применялось к обоим свойствам */
+  transition-duration: 0.3s; /* Добавляем анимацию 0.3 сек. */
+  transition-delay: 0.25s; /* Добавляем задержку в 0.15 сек. */
+}
+.main div:hover > .submain {
+  margin: 10px -40px;
+  opacity: 1; /* Показываем подменю при ховере */
+  visibility: visible;
+}
+.submain > li {
+  border-radius: 15px;
+  background: #dafada;
+  box-shadow: 0px 0px 15px 4px black;
+  padding:7px;
   margin: 0px;
+  list-style: none;
 }
-.transparent50 {
-  filter: alpha(Opacity=70);
-  opacity: 0.5;
+.sSubmain li{
+  margin-top: 3px;
+  padding: 3px;
+  list-style: none;
+  margin-left: -40px;
+  box-shadow: 0px 0px 15px 2px black;
 }
-.usl-all {
+.sSubmain a{
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+.uslall {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  box-shadow: 0px 0px 15px 4px black;
+  border-radius: 15px;
+  background-color: #d9f0d9;
+  text-shadow: 1px 0px 2px black;
 }
 .usl {
   width: 250px;
   height: 250px;
   font-size: larger;
-  border: 1px solid black;
+  box-shadow: inset 0px 0px 15px 4px black;
   border-radius: 10%;
   background-color: white;
   padding: 10px;
-  margin: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.uslall a {
+  text-decoration: none;
+  color: black;
 }
 .usl:hover {
-  box-shadow: 0px 10px 50px grey;
+  box-shadow: inset 0px 0px 15px 10px black;
 }
 .dropdown {
   border: 1px solid black;
@@ -128,9 +166,17 @@ h2 {
 
 /*@font-face {
   font-family: lobster;
-  src: url(../fonts/Lobster.ttf);*/
+  src: url(../fonts/Lobster.ttf);}
+  
+  @font-face {
+  font-family: Lighthaus;
+  src: url(../fonts/Lighthaus.otf);
+}*/
 
 @font-face {
   font-family: indira;
   src: url(../fonts/indira.ttf);
+}
+.bord {
+  border: solid red;
 }
