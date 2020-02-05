@@ -1,7 +1,6 @@
 html {
   text-align: center;
-  background: url(1jpg);
-  font-family: "indira", sans-serif;
+  font-family: "Marta_Italic", sans-serif;
   box-sizing: border-box;
   background: url(../img/fon.png);
 }
@@ -24,7 +23,7 @@ h3 {
 .head {
   display: flex;
   justify-content: space-between;
-  min-height: 170px;
+  min-height: 30%;
   background-color: black;
   border-radius: 15px;
   box-shadow: 0px 0px 15px 4px black;
@@ -89,7 +88,7 @@ nav {
 }
 .main > ul > li > a {
   text-align: center;
-  padding: 5px 5px;
+  padding: 3px 5px;
   display: block;
   text-decoration: none;
   text-shadow: 1px 0px 2px black;
@@ -99,8 +98,8 @@ nav {
 .main > ul > li > a:hover {
   text-decoration: underline;
   box-shadow: inset 0px 0px 5px 4px black;
-  /*box-shadow: 0px 0px 15px 4px black;
-  border-radius: 0px;*/
+  /*box-shadow: 0px 0px 15px 4px black;*/
+  border-radius: 15px;
 }
 
 .submain {
@@ -108,7 +107,7 @@ nav {
   padding: 0;
   flex-direction: column;
   position: absolute;
-  margin: 10px -40px;
+  margin: 25px -10px;
   border-radius: 15px;
   opacity: 0; /* По умолчанию скрываем подменю */
   visibility: hidden;
@@ -171,8 +170,14 @@ nav {
 .usl:hover {
   box-shadow: inset 0px 0px 15px 10px black;
 }
-.dropdown {
-  border: 1px solid black;
+
+.txt {
+  text-align: justify;
+  padding: 15px;
+  text-indent: 30px;
+}
+.txt li{
+  margin-bottom: 15px;
 }
 
 /*@font-face {
@@ -182,26 +187,30 @@ nav {
   @font-face {
   font-family: Lighthaus;
   src: url(../fonts/Lighthaus.otf);
-}*/
+}
 
 @font-face {
   font-family: indira;
   src: url(../fonts/indira.ttf);
+}*/
+@font-face {
+  font-family: Marta_Italic;
+  src: url(../fonts/Marta_Italic.otf);
 }
 @media (max-width: 600px) {
   h1 {
-    font-size: 20px;
+    font-size: 28px;
   }
   h3 {
-    font-size: 15px;
+    font-size: 20px;
   }
-  .head{
+  .head {
     flex-direction: column;
   }
-  .head1{
+  .head1 {
     max-width: 100%;
   }
-  .head2{
+  .head2 {
     max-width: 100%;
     border-radius: 15px;
   }
