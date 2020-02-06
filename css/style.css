@@ -176,8 +176,16 @@ nav {
   padding: 15px;
   text-indent: 30px;
 }
-.txt li{
+.txt li {
   margin-bottom: 15px;
+}
+.centr {
+  text-align: center;
+}
+.imgLeft {
+  float: left;
+  margin: 15px;
+  border: solid black 1px;
 }
 
 /*@font-face {
