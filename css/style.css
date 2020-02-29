@@ -12,6 +12,11 @@ body {
 }
 h1 {
   font-size: 40px;
+  
+}
+.head a{
+  text-decoration: none;
+  color: black;
 }
 h2 {
   font-size: 30px;
@@ -38,7 +43,7 @@ h3 {
   padding-right: 10px;
   border-radius: 15px;
   box-shadow: 0px 0px 15px 4px black;
-  max-width: 80%;
+  width: 78%;
   justify-content: center;
   align-items: center;
   text-shadow: 1px 0px 3px black;
@@ -50,11 +55,60 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
   border-radius: 0px 15px 15px 0px;
   color: white;
-  max-width: 20%;
+  width: 22%;
   box-shadow: inset 0px 0px 10px 4px black;
   background-color: #283b2a;
+}
+.head2 p {
+  margin: 0px;
+}
+footer p {
+  margin: 0px;
+}
+.phon {
+  position: relative;
+  margin: 10px 0px 10px 0px;
+}
+.phon::before {
+  content: "";
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  background-image: url(../img/phone.png);
+  background-size: 32px 32px;
+  left: 10px;
+  top: -3px;
+}
+.post {
+  position: relative;
+  margin: 10px 0px 10px 0px;
+}
+.post::before {
+  content: "";
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  background-image: url(../img/adr.png);
+  background-size: 32px 32px;
+  left: 10px;
+  top: 5px;
+}
+.mail {
+  position: relative;
+  margin: 10px 0px 10px 0px;
+}
+.mail::before {
+  content: "";
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  background-image: url(../img/mail.png);
+  background-size: 32px 32px;
+  left: 10px;
+  top: -10px;
 }
 nav {
   margin-top: 15px;
@@ -114,11 +168,13 @@ nav {
   transition-property: opacity, visibility; /* Важно чтобы transition применялось к обоим свойствам */
   transition-duration: 0.3s; /* Добавляем анимацию 0.3 сек. */
   transition-delay: 0.25s; /* Добавляем задержку в 0.15 сек. */
+  z-index: 7;
 }
 .main > ul > li:hover > .submain {
   margin: 25px -10px;
   opacity: 1; /* Показываем подменю при ховере */
   visibility: visible;
+  z-index: 7;
 }
 .submain > li {
   border-radius: 15px;
@@ -141,8 +197,8 @@ nav {
   color: black;
 }
 
-img {
-  width: 100%;  !important;
+.sim-slider img {
+  width: 100%;
 }
 
 /* General styles */
@@ -189,15 +245,15 @@ div.sim-slider-arrow-right {
   right: 10px;
   top: 40%;
   display: block;
-  background: url("../img/strL.png") no-repeat;  border: 1px solid #ff0505;
+  background: url("../img/strL.png") no-repeat;
 }
 
 div.sim-slider-arrow-left:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 div.sim-slider-arrow-right:hover {
-  opacity: 1.0;
+  opacity: 1;
 }
 
 div.sim-slider-dots {
@@ -208,7 +264,6 @@ div.sim-slider-dots {
   bottom: 0;
   z-index: 3;
   text-align: center;
-
 }
 
 span.sim-dot {
@@ -217,7 +272,7 @@ span.sim-dot {
   margin: 5px 7px;
   padding: 0;
   display: inline-block;
-  background-color: #BBB;
+  background-color: #bbb;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -233,7 +288,7 @@ span.sim-dot {
 }
 .usl {
   width: 250px;
-  height: 250px;
+  height: 400px;
   font-size: larger;
   box-shadow: inset 0px 0px 15px 4px black;
   border-radius: 10%;
@@ -243,6 +298,9 @@ span.sim-dot {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 20px;
+}
+.usl>p{
+  font-size: 15px;
 }
 .uslall a {
   text-decoration: none;
@@ -260,37 +318,68 @@ span.sim-dot {
 .txt li {
   margin-bottom: 15px;
 }
+.pu{
+  text-indent: 10px;
+}
 .centr {
   text-align: center;
 }
 .imgLeft {
   float: left;
-  margin: 15px;
-  border: solid black 1px;
+  margin: 15px 35px 15px 15px;
+
 }
-.inviz{
+.inviz {
   display: none;
-
+}
+.foot {
+  display: flex;
+  box-shadow: inset 0px 0px 10px 4px black;
+  background-color: #283b2a;
+  color: white;
+  border-radius: 15px;
+  justify-content: space-around;
+  margin: 40px 0px 5px 0px;
+  padding: 20px 20px 40px 20px;
 }
 
-/*@font-face {
-  font-family: lobster;
-  src: url(../fonts/Lobster.ttf);}
-  
-  @font-face {
-  font-family: Lighthaus;
-  src: url(../fonts/Lighthaus.otf);
+.footVl {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+  color: white;
+  width: 30%;
 }
-
-@font-face {
-  font-family: indira;
-  src: url(../fonts/indira.ttf);
-}*/
+.footVl a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: black;
+}
 @font-face {
   font-family: Marta_Italic;
   src: url(../fonts/Marta_Italic.otf);
 }
-@media (max-width: 600px) {
+@media (min-width: 700px) and (max-width: 1000px) {
+  .phon::before {
+    display: none; 
+    }
+  .post::before {
+    display: none;
+  }
+  .mail::before {
+    display: none;
+  }
+  p {
+    font-size: 13px;
+  }
+}  
+
+@media (max-width: 700px) {
   h1 {
     font-size: 28px;
   }
@@ -301,13 +390,30 @@ span.sim-dot {
     flex-direction: column;
   }
   .head1 {
-    max-width: 100%;
+    width: 100%;
   }
   .head2 {
-    max-width: 100%;
+    width: 100%;
     border-radius: 15px;
   }
   body {
     width: 100%;
   }
+  .footVl {
+    display: none;
+  }
+  .footVl:first-child {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    }
+    .foot .phon::before {
+      display: none; 
+      }
+    .foot .post::before {
+      display: none;
+    }
+   .mail::before {
+      display: none;
+    }
 }
