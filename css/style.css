@@ -321,8 +321,9 @@ span.sim-dot {
 .pu{
   text-indent: 10px;
 }
-.centr {
+.map {
   text-align: center;
+
 }
 .imgLeft {
   float: left;
@@ -416,4 +417,5 @@ a:hover {
    .mail::before {
       display: none;
     }
+
 }
